@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <title>Eclipse | 成員</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 新增：成員列表的並排樣式 */
+    .member-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; /* 每個成員之間的間距 */
+      margin-top: 30px;
+    }
+
+    .member {
+      display: flex;
+      align-items: center;     /* 垂直置中 */
+      gap: 20px;               /* 頭像與文字間距 */
+    }
+
+    .member img {
+      width: 64px;             /* 固定頭像大小 */
+      height: 64px;
+      flex-shrink: 0;          /* 不讓圖片被壓縮 */
+      image-rendering: pixelated; /* Minecraft 頭像保持像素風格 */
+    }
+
+    .member-info h3 {
+      margin: 0 0 8px 0;
+      color: #fcd27d;
+      font-size: 1.3rem;
+    }
+
+    .member-info p {
+      margin: 0;
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+    <h1>Eclipse</h1>
+  </a>
+
+  <nav>
+    <a href="rules.html" data-zh="公會守則" data-en="Guild Rules">公會守則</a>
+    <a href="facilities.html" data-zh="公會設施" data-en="Facilities">公會設施</a>
+    <a href="members.html" data-zh="資深成員" data-en="Members">資深成員</a>
+  </nav>
+
+  <div class="top-buttons">
+    <button id="langToggle">EN</button>
+  </div>
+</header>
+
+<section>
+  <h2 data-zh="資深成員" data-en="Veteran Members">資深成員</h2>
+
+  <div class="member-list">
+    <!-- 會長 -->
+    <div class="member">
+      <img src="image/R_opo_head.png" alt="R_opo">
+      <div class="member-info">
+        <h3 data-zh="會長" data-en="President">會長</h3>
+        <p>Minecraft ID: R_opo</p>
+      </div>
+    </div>
+
+    <!-- 資深成員（策劃者） -->
+    <div class="member">
+      <img src="image/VanL48_head.png" alt="VanL48">
+      <div class="member-info">
+        <h3 data-zh="策劃者" data-en="Organizer">策劃者</h3>
+        <p>Minecraft ID: VanL48</p>
+      </div>
+    </div>
+
+    <!-- 資深成員（執行人員） -->
+    <div class="member">
+      <img src="image/SKAI_040_head.png" alt="SKAI_040">
+      <div class="member-info">
+        <h3 data-zh="執行人員" data-en="Executive">執行人員</h3>
+        <p>Minecraft ID: SKAI_040</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="https://discord.gg/g4eyVUWJY4" style="display: flex; align-items: center; gap: 20px;">
+    <img src="image/discord.png" width="3%" alt="Discord">
+    <span>Join our Discord!</span>
+  </a>
+</footer>
+
+<script src="lang.js"></script>
+</body>
+</html>

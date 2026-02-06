@@ -1,0 +1,145 @@
+/* ===== Global ===== */
+body {
+  margin: 0; /* FIX: remove default body gap */
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #020617;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0; /* FIX */
+}
+
+/* 標題在左 */
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+header > a:first-child {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header > a:first-child:hover {
+  text-decoration: underline;
+}
+/* ===== Navigation (center) ===== */
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+}
+
+nav a {
+  color: #f8b538;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Right buttons ===== */
+.top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 語言切換 */
+#langToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f8b538;
+  color: #020617;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ===== Section ===== */
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto; /* FIX: remove top margin gap */
+}
+
+h2 {
+  color: #fcd27d;
+  text-align: left;
+}
+
+/* ===== Image ===== */
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0; /* FIX */
+}
+
+.img-container img {
+  display: block; /* FIX: remove inline image gap */
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Lists & Members ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+}
+
+
+/* ===== Discord ===== */
+.discord-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #5865F2;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ===== Footer ===== */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #020617;
+  color: #0069fb;
+  margin-top: 40px;
+}
+
+/* ===== Optional Image Wrapper ===== */
+.wrap {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
